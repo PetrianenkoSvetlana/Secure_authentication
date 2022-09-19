@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sveta/AndroidStudioProjects/Secure_authentication/app/src/main/res/layout/account_data.xml" value="0.20697463768115942" />
+        <entry key="..\:/Users/Sveta/AndroidStudioProjects/Secure_authentication/app/src/main/res/layout/change_account_data.xml" value="0.20697463768115942" />
+        <entry key="..\:/Users/Sveta/AndroidStudioProjects/Secure_authentication/app/src/main/res/layout/change_email.xml" value="0.20697463768115942" />
+        <entry key="..\:/Users/Sveta/AndroidStudioProjects/Secure_authentication/app/src/main/res/layout/delete_account.xml" value="0.20697463768115942" />
+        <entry key="..\:/Users/Sveta/AndroidStudioProjects/Secure_authentication/app/src/main/res/layout/exit.xml" value="0.20697463768115942" />
+        <entry key="..\:/Users/Sveta/AndroidStudioProjects/Secure_authentication/app/src/main/res/layout/menu.xml" value="0.20697463768115942" />
+        <entry key="..\:/Users/Sveta/AndroidStudioProjects/Secure_authentication/app/src/main/res/layout/protected_area.xml" value="0.20697463768115942" />
         <entry key="..\:/Users/Sveta/AndroidStudioProjects/Secureauthentication/app/src/main/res/layout/account_data.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Sveta/AndroidStudioProjects/Secureauthentication/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Sveta/AndroidStudioProjects/Secureauthentication/app/src/main/res/layout/change_account_data.xml" value="0.20425724637681159" />
