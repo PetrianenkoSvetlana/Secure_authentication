@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.secureauthentication.MenuFragment"
+        android:label="menu"
+        tools:layout="@layout/menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_changeAccountDataFragment"
+            app:destination="@id/changeAccountDataFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_changeEmailFragment"
+            app:destination="@id/changeEmailFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_protectedAreaFragment"
+            app:destination="@id/protectedAreaFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_exitFragment"
+            app:destination="@id/exitFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_deleteAccountFragment"
+            app:destination="@id/deleteAccountFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_accountDataFragment2"
+            app:destination="@id/accountDataFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeAccountDataFragment"
+        android:name="com.example.secureauthentication.ChangeAccountDataFragment"
+        android:label="change_account_data"
+        tools:layout="@layout/change_account_data" >
+        <action
+            android:id="@+id/action_changeAccountDataFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeEmailFragment"
+        android:name="com.example.secureauthentication.ChangeEmailFragment"
+        android:label="change_email"
+        tools:layout="@layout/change_email" >
+        <action
+            android:id="@+id/action_changeEmailFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteAccountFragment"
+        android:name="com.example.secureauthentication.DeleteAccountFragment"
+        android:label="delete_account"
+        tools:layout="@layout/delete_account" >
+        <action
+            android:id="@+id/action_deleteAccountFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_deleteAccountFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exitFragment"
+        android:name="com.example.secureauthentication.ExitFragment"
+        android:label="exit"
+        tools:layout="@layout/exit" >
+        <action
+            android:id="@+id/action_exitFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_exitFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/protectedAreaFragment"
+        android:name="com.example.secureauthentication.ProtectedAreaFragment"
+        android:label="protected_area"
+        tools:layout="@layout/protected_area" >
+        <action
+            android:id="@+id/action_protectedAreaFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.secureauthentication.SignInFragment"
+        android:label="sign_in"
+        tools:layout="@layout/sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountDataFragment2"
+        android:name="com.example.secureauthentication.AccountDataFragment"
+        android:label="account_data"
+        tools:layout="@layout/account_data" >
+        <action
+            android:id="@+id/action_accountDataFragment2_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>
