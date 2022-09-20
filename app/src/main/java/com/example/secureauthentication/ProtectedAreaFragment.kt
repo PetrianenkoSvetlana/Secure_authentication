@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class ProtectedAreaFragment: Fragment(R.layout.protected_area) {
     private lateinit var navController: NavController
@@ -18,12 +20,12 @@ class ProtectedAreaFragment: Fragment(R.layout.protected_area) {
         super.onViewCreated(view, savedInstanceState)
 
         navController = Navigation.findNavController(view);
-//        auth = Firebase.auth
+        auth = Firebase.auth
 
         btnToMenu = view.findViewById(R.id.btn_to_menu)
 
         btnToMenu.setOnClickListener {
-            navController.navigate(R.id.action_protectedAreaFragment_to_menuFragment)
+            navController.popBackStack()
         }
     }
 }

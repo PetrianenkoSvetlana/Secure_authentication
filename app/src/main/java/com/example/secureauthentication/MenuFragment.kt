@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class MenuFragment: Fragment(R.layout.menu){
@@ -18,13 +19,10 @@ class MenuFragment: Fragment(R.layout.menu){
     private lateinit var btnExit: Button
     private lateinit var btnDeleteAccount: Button
 
-    private lateinit var auth: FirebaseAuth
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         navController = Navigation.findNavController(view);
-//        auth = Firebase.auth
 
         btnAccountData = view.findViewById(R.id.btn_account_data)
         btnChngAccountData = view.findViewById(R.id.btn_chng_account_data)

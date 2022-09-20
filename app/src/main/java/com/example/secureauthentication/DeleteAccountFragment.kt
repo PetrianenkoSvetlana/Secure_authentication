@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class DeleteAccountFragment: Fragment(R.layout.delete_account) {
     private lateinit var navController: NavController
@@ -19,7 +21,7 @@ class DeleteAccountFragment: Fragment(R.layout.delete_account) {
         super.onViewCreated(view, savedInstanceState)
 
         navController = Navigation.findNavController(view);
-//        auth = Firebase.auth
+        auth = Firebase.auth
 
         btnDelete = view.findViewById(R.id.btn_delete)
         btnBack = view.findViewById(R.id.btn_back)

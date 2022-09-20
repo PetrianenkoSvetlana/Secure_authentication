@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class ExitFragment: Fragment(R.layout.exit) {
     private lateinit var navController: NavController
@@ -19,7 +21,7 @@ class ExitFragment: Fragment(R.layout.exit) {
         super.onViewCreated(view, savedInstanceState)
 
         navController = Navigation.findNavController(view);
-//        auth = Firebase.auth
+        auth = Firebase.auth
 
         btnExitFromAcc = view.findViewById(R.id.btn_exit_from_acc)
         btnBackToMenu = view.findViewById(R.id.btn_back_to_menu)

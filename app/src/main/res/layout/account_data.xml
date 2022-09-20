@@ -8,11 +8,12 @@
     tools:context="AccountDataFragment">
 
     <ImageView
-        android:id="@+id/img"
+        android:id="@+id/img_acc"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:paddingTop="32dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:scaleType="fitCenter"
+        app:srcCompat="?android:attr/galleryItemBackground" />
 
     <TextView
         android:id="@+id/txt_area"
