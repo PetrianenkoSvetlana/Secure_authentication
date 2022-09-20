@@ -1,11 +1,14 @@
 package com.example.secureauthentication
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import com.firebase.ui.auth.AuthUI
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -27,7 +30,19 @@ class DeleteAccountFragment: Fragment(R.layout.delete_account) {
         btnBack = view.findViewById(R.id.btn_back)
 
         btnDelete.setOnClickListener {
-            navController.navigate(R.id.action_deleteAccountFragment_to_signInFragment)
+            AuthUI.getInstance()
+                .delete(requireContext())
+                .addOnCompleteListener {
+                        task ->
+                    if (task.isSuccessful) {
+                        var intent = Intent(activity, MainActivity::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK + Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        startActivity(intent)
+                    }
+                    else {
+                        Toast.makeText(context, "Удалить пользователя не удалось!", Toast.LENGTH_SHORT).show()
+                    }
+                }
         }
 
         btnBack.setOnClickListener {
