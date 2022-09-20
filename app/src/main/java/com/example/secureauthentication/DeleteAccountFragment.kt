@@ -31,7 +31,7 @@ class DeleteAccountFragment: Fragment(R.layout.delete_account) {
         }
 
         btnBack.setOnClickListener {
-            navController.navigate(R.id.action_deleteAccountFragment_to_menuFragment)
+            navController.popBackStack()
         }
     }
 }
