@@ -55,9 +55,6 @@
         <action
             android:id="@+id/action_deleteAccountFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
-        <action
-            android:id="@+id/action_deleteAccountFragment_to_signInFragment"
-            app:destination="@id/signInFragment" />
     </fragment>
     <fragment
         android:id="@+id/exitFragment"
@@ -67,9 +64,6 @@
         <action
             android:id="@+id/action_exitFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
-        <action
-            android:id="@+id/action_exitFragment_to_signInFragment"
-            app:destination="@id/signInFragment" />
     </fragment>
     <fragment
         android:id="@+id/protectedAreaFragment"
@@ -78,15 +72,6 @@
         tools:layout="@layout/protected_area" >
         <action
             android:id="@+id/action_protectedAreaFragment_to_menuFragment"
-            app:destination="@id/menuFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/signInFragment"
-        android:name="com.example.secureauthentication.SignInFragment"
-        android:label="sign_in"
-        tools:layout="@layout/sign_in" >
-        <action
-            android:id="@+id/action_signInFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
     </fragment>
     <fragment

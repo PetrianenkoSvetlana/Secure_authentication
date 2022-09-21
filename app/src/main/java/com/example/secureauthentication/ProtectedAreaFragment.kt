@@ -14,13 +14,10 @@ class ProtectedAreaFragment: Fragment(R.layout.protected_area) {
     private lateinit var navController: NavController
     private lateinit var btnToMenu: Button
 
-    private lateinit var auth: FirebaseAuth
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         navController = Navigation.findNavController(view);
-        auth = Firebase.auth
 
         btnToMenu = view.findViewById(R.id.btn_to_menu)
 
